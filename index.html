@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link do CSS do reset-->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <!--Link do CSS do header-->
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="css/header.css">
     <!--Link do CSS do main-->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <!--Link do CSS do produto-->
-    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="css/produto.css">
     <!--Link do CSS do footer-->
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--CDN Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Link do Icones-->
     <script src="https://kit.fontawesome.com/1714a22e25.js" crossorigin="anonymous"></script>
     <!--Link do Icone-->
@@ -24,13 +27,31 @@
 
 <body>
     <nav class="navbar">
-        <div class="logo"></div>
-        <div class="nsv"></div>
-        <div class="pesquisa"></div>
+        <img src="img/logo.png" alt="logo da navbar" class="logo">
+        <div class="nav">
+            <ul class="menu">
+                <a href="">
+                    <il>Inicio</il>
+                </a>
+                <a href="">
+                    <il>Modelo</il>
+                </a>
+                <a href="">
+                    <il>Contato</il>
+                </a>
+            </ul>
+            </form>
+        </div>
+        <div class="buscar"><div class="contentbusca"><i class="fa-solid fa-magnifying-glass"></i><input class="search" type="search"
+                placeholder="Pesquisar..."></div>
+        </div>
     </nav>
-    <div class="main"></div>
-    <section class="produto"></section>
-    <footer>
+    <div class="main">
+    </div>
+    <section class="produto">
+        <img src="img/wave.png" alt="borda de div" class="nuvem">
+    </section>
+    <footer class="rodape">
         <div class="contato">
             <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
             <div class="icon"><i class="fa-brands fa-instagram"></i></div>
@@ -41,5 +62,15 @@
     </footer>
 
 </body>
+<!--CDN do Bootstrap (JS, Popper.js, e jQuery)-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
 </html>

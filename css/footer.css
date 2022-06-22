@@ -1,0 +1,43 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+    width: 100%;
+    color: white;
+    padding: 1%;
+}
+
+.contato {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    font-size: 28px;
+}
+
+.fa-whatsapp {
+    margin-right: 15px;
+    padding: 13%;
+    border-radius: 15px;
+    color: white;
+}
+
+.fa-instagram {
+    padding-right: 1%;
+}
+
+.fa-whatsapp:hover {
+color: springgreen;
+cursor: pointer;
+}
+
+.fa-instagram:hover {
+color: violet;
+cursor: pointer;
+}
