@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/header.css">
   <!--Link do CSS do main-->
   <link rel="stylesheet" href="css/main.css">
+    <!--Link do CSS do sobre-->
+    <link rel="stylesheet" href="css/sobre.css">
   <!--Link do CSS do produto-->
   <link rel="stylesheet" href="css/produto.css">
   <!--Link do CSS do footer-->
@@ -27,69 +29,83 @@
 <body>
   <!--(ESTRUTURA DA NAVBAR)-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
   <nav class="navbar">
-    <div class="logo"><img src="img/logo.png" alt="image logo" class="imglogo"></div>
+    <div class="logo"><img class="imglogo" src="img/logo.png" alt=""></div>
     <div class="menu">
-      <form class="forms">
-        <ul class="ordem">
-          <li><a class="azul" href="">Inicio</a></li>
-          <li><a class="azul" href="">Modelos</a></li>
-          <li><a class="azul" href="">Contato</a></li>
-        </ul>
-      </form>
+      <ul class="ordem">
+        <li><a class="azul" href="">Inicio</a></li>
+        <li><a class="azul" href="">Sobre</a></li>
+        <li><a class="azul" href="">Modelos</a></li>
+        <li><a class="azul" href="">Contato</a></li>
+      </ul>
     </div>
-    <div class="pesquisar"><input type="search" placeholder="Pesquisar..." class="inputpesq"><button type="submit"
-        class="lupa"><i class="fa-solid fa-magnifying-glass"></i></button></div>
   </nav>
   <!--(ESTRUTURA DO SLIDESHOW)-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
-  <section class="main">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/slide4.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/slide2.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/slide3.png" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Proximo</span>
-      </button>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-  </section>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slide1.jpg" class="d-block w-100 h-25" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide2.png" class="d-block w-100 h-25" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide3.png" class="d-block w-100 h-25" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--(ESTRUTURA DO SOBRE NOS)-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+  <div class="sobre">
+    <img class="selo" src="img/selo.png" alt="">
+    <h4>Sobre Nós</h4>
+    <p>Sempre gostei de desenhar e criar coisas nova, e com isso venho a paixao de criar artgos personalizados de papel. Sempre fazendo o melhor e de forma mais efeciente possivel!1</p>
+    <p>~Guilherme</p>
+  </div>
   <!--(ESTRUTURA DA DIVISÃO DE PRODUTOS)-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
   <section class="produto">
+    <!--Efeito de ondas para o footer-->
     <img src="img/wave.png" alt="borda de div" class="nuvem">
+    <!--Banner de titulo-->
+    <img src="img/banner.png" alt="" class="banner">
+    <div class="ferramentas">
+      <div class="pesquisar">
+        <!--Input de pesquisa-->
+        <input class="search" type="search" placeholder="Pesquisar...">
+      </div>
+    </div>
+    <!--Card do produto/item-->
     <div class="item">
+      <!--Imagem do produto ou item-->
       <img src="img/modelo.jpg" alt="imagem do produto" class="modeloimg">
+      <!--Titulo do produto-->
       <h4 class="tituloitem">Mundo Bida - 01</h4>
+      <!--Descrição breve-->
       <p class="desc">*Consultar valores via Whatsapp.</p>
+      <!--Botão da api do Whatsapp-->
       <button class="btnescolher">Escolher</button>
     </div>
   </section>
   <!--(ESTRUTURA DO RODAPE)-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
   <footer class="rodape">
     <div class="contato">
+      <!--Icone e Link do Whatsapp-->
       <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+      <!--Icone e Link do Instagram-->
       <div class="icon"><i class="fa-brands fa-instagram"></i></div>
     </div>
+    <!--info do footer-->
     <p>@2022 Criado por Guilherme Araujo.</p>
     <p>CNPJ: 11.773.905/0001-10 - Rua Serra azul 2744 Centro CEP 76974-000</p>
     <P>pluralfoto@hotmail.com | Estimativa de entrega 1 - 3 dias uteis.</P>

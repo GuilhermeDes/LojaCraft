@@ -1,0 +1,19 @@
+.sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.selo {
+    width: 5%;
+}
+
+.sobre h1 {
+    font-size: 35px;
+}
+
+.sobre p {
+    color: gray;
+}

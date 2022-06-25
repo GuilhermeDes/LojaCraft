@@ -1,6 +1,7 @@
+/*(DIV PRINCIPAL)-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 .produto {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100vh;
@@ -8,6 +9,70 @@
     position: relative;
 }
 
+.nuvem {
+    position: absolute;
+    bottom: 0;
+    align-self: flex-end;
+    width: 100%;
+    height: 5vh;
+}
+
+
+.banner {
+    width: 20%;
+    align-self: center;
+    padding-top: 2%;
+}
+
+/*(BARRA DE FERRAMENTAS)-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.ferramentas {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 2%;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.search {
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 4vh;
+    outline: none;
+    margin-right: 10px;
+    padding-right: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    border: 2px solid rgb(221, 221, 221);
+}
+
+.search::placeholder {
+    text-align: end;
+    text-align: center;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+
+.search:focus {
+    box-shadow: 0px 0px 2px 2px rgba(182, 182, 182, 0.555);
+}
+
+.lupa {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+.grid {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: rgb(158, 158, 158);
+}
+
+/*(CARD DO PRODUTO/ITEM)-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 .item {
     display: flex;
     flex-direction: column;
@@ -16,8 +81,18 @@
     background-color: white;
     padding: 1%;
 }
+
 .modeloimg {
     height: 30vh;
+}
+
+.tituloitem {
+    color: black;
+}
+
+.desc {
+    font-weight: 500;
+    color: rgba(112, 128, 144, 0.685);
 }
 
 .btnescolher {
@@ -34,17 +109,4 @@
     color: seagreen;
     border: 2px solid seagreen;
     cursor: pointer;
-}
-
-.desc {
-    font-weight: 500;
-    color: rgba(112, 128, 144, 0.685);
-}
-
-.nuvem {
-    position: absolute;
-    bottom: 0;
-    align-self: flex-end;
-    width: 100%;
-    height: 5vh;
 }
